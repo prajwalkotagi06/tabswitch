@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(/12345.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    width: 500px;
+    height: 300px;
+    top: 25vh;
+    left: 30%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.box{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.list{
+    display: flex;
+    position: relative;
+
+
+}
+.list h4:first-child{
+    /* justify-content: space-between; */
+    margin-left: 0px;
+    font-size: 20px;
+    top: 20px;
+    position: relative;
+
+}
+.list h4{
+    margin-left: 40px;
+    font-size: 20px;
+    top: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.list h4 {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.list h4::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.list h4:hover::after,
+.list h4:focus::after {
+    width: 100%;
+}
+.content_box{
+    top: 30px;
+    position: relative;
+}
+.content_box h3{
+    font-size: 20px;
+}
+.content_box p{
+    font-size: 16px;
+}
+.content_box {
+    display: none;
+}
+.box_1{
+    display: block;
+}
